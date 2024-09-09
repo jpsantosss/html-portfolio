@@ -18,4 +18,67 @@
     margin: 0px;
     padding: 0px;
     font-family: "Fira Sans", sans-serif;
+    
+    border: 1px solid black;
 }
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+.menu-list{
+    display: flex;
+    gap: 40px;
+}
+.menu-list-item{
+    list-style: none;
+}
+.menu-list-item a{
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--c011);
+}
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0px auto 60px auto;
+    padding: 0px 50px;
+}
+.introduction-photo{
+    width: 250px;
+    height: 350px;
+}
+.introduction-description{
+    grid-column: 3 / -1;
+    grid-row: 1;
+    align-self: center;
+}
+.introduction-description-title{
+    position: relative;
+    font-size: 4rem;
+    line-height: 64px;
+    margin-bottom: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.introduction-description-title::before{
+    position: absolute;
+    content: url(assets/decoracao.svg);
+    z-index: -1;
+    left: -29px;
+    top: -18px;
+}
+.experience{
+    margin-top: 60px;
+    grid-row-start: 2;
+    grid-column: 1 / 6;
+}
+
+
+
