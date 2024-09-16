@@ -8,9 +8,9 @@
     gap: 100px;
     align-items: center;
 }
-.introduction img{
+.introduction-profile-photo{
     width: 100%;
-
+    height: auto;
     display: block;
 }
 .introduction-description-title{
@@ -21,9 +21,11 @@
 }
 .introduction-description-title::before{
     position: absolute;
-    content: url(../assets/decoracao.svg);
-    width: 130px;
+    display: block;
+    content: '';
+    background: url('../assets/decoracao.svg') no-repeat center;
     height: 100px;
+    width: 130px;
     left: -25px;
     top: -10px;
     z-index: -1;
@@ -46,7 +48,7 @@
         font-size: 2rem;
     }
     .introduction-description-title::before{
-        width: 20px;
+        width: 30px;
         height: 10px;
         left: 0px;
     }
