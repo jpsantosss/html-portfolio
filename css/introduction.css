@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.introduction{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+.introduction img{
+    width: 100%;
+
+    display: block;
+}
+.introduction-description-title{
+    position: relative;
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+}
+.introduction-description-title::before{
+    position: absolute;
+    content: url(../assets/decoracao.svg);
+    width: 130px;
+    height: 100px;
+    left: -25px;
+    top: -10px;
+    z-index: -1;
+}
+.introduction-description-local{
+    font-size: 1.5rem;
+    color: var(--c008);
+}
+@media (max-width: 1000px){
+    .introduction-description-title{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 800px){
+    .introduction{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .introduction-description-title{
+        font-size: 2rem;
+    }
+    .introduction-description-title::before{
+        width: 20px;
+        height: 10px;
+        left: 0px;
+    }
+}
+@media (max-width: 400px){
+    .introduction{
+        grid-template-columns: 1fr;
+    }
+    .introduction img{
+        display: none;
+    }
+}

@@ -1,104 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
-:root{
-    --c001: #ffffff;
-    --c002: #f0f0f0;
-    --c003: #DEDEDE;
-    --c004: #CCCCCC;
-    --c005: #B2B2B2;
-    --c006: #9C9C9C;
-    --c007: #717171;
-    --c008: #595959;
-    --c009: #404040;
-    --c010: #2E2E2E;
-    --c011: #141414;
-    --c012: #67DD0A;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: "Fira Sans", sans-serif;
-    
-
-}
-span.bold{
-    font-weight: bold;
-    color: var(--c011);
-}
-span.bold-white{
-    font-weight: bold;
-    color: var(--c001);
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px auto;
-    max-width: 1200px;
-}
-.menu-list{
-    display: flex;
-    gap: 40px;
-}
-.menu-list-item{
-    list-style: none;
-}
-.menu-list-item a{
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--c011);
-}
-.main-content{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 120px;
-    max-width: 1200px;
-    min-width: 857px;
-    margin: 0px auto;
-}
-.introduction{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px;
-    margin: 0px auto 0px auto;
-    padding: 0px 50px;
-}
-.introduction-photo{
-    width: 250px;
-    height: 350px;
-}
-.introduction-description{
-    grid-column: 3 / -1;
-    grid-row: 1;
-    align-self: center;
-}
-.introduction-description-title{
-    position: relative;
-    font-size: 4rem;
-    line-height: 64px;
-    margin-bottom: 40px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.introduction-description-title::before{
-    position: absolute;
-    content: url(assets/decoracao.svg);
-    z-index: -1;
-    left: -29px;
-    top: -18px;
-}
-.introduction-description-local{
-    font-size: 1.3rem;
-}
+@import './global.css';
+@import './header.css';
+@import './introduction.css';
 .experience{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 60px 30px;
-    margin: 0px auto 0px auto;
-    padding: 0px 50px;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px 120px;
 }
 .experience-subtitle{
     display: block;
@@ -118,13 +25,13 @@ span.bold-white{
     word-break: break-all;
 }
 .experience-content{
-    grid-column: 3 / -5;
+    grid-column: 2;
     align-content: center;
 }
 .experience-text{
     font-size: 1.2rem;
     line-height: 1.3;
-    max-width: 55ch;
+    max-width: 30ch;
 }
 .experience-year{
     grid-column: 2;
@@ -135,7 +42,7 @@ span.bold-white{
 }
 .experience-box{
     position: relative;
-    grid-column: 3 / -1;
+    grid-column: 2;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -175,12 +82,21 @@ span.bold-white{
     background-color: var(--c001);
     color: var(--c010);
 }
+
+
+
+
+
+
+
+
+
+
+
 .academic{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px 30px;
-    margin: 0px auto 0px auto;
-    padding: 120px 50px;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px 120px;
     background-color: var(--c011);
 }
 .academic-subtitle{
@@ -201,7 +117,7 @@ span.bold-white{
     word-break: break-all;
 }
 .academic-content{
-    grid-column: 3 / -5;
+    grid-column: 2;
     align-content: center;
 }
 .academic-text{
@@ -212,14 +128,11 @@ span.bold-white{
 }
 .academic-box{
     position: relative;
-    grid-column: 3 / -1;
+    grid-column: 2;
     width: 110px;
     height: 110px;
     padding: 20px;
     background-color: black;
-}
-.experience-year-text{
-    text-align: right;
 }
 .academic-box::before{
     position: absolute;
@@ -252,7 +165,7 @@ span.bold-white{
     text-align: right;
 }
 .intensive-courses{
-    grid-column: 3 / -1;
+    grid-column: 2;
     margin-top: 30px;
 }
 .intensive-courses-title{
