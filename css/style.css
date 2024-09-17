@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import './global.css';
 @import './header.css';
 @import './introduction.css';
 @import './experience.css';
 @import './academic.css';
+@import './global.css';

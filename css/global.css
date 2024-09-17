@@ -18,7 +18,6 @@
     margin: 0px;
     padding: 0px;
     font-family: "Fira Sans", sans-serif;
-    color: var(--c011);
 }
 span.bold{
     font-weight: bold;
@@ -32,6 +31,9 @@ img{
     max-width: 100%;
     display: block;
 }
+p{
+    color: var(--c011);
+}
 .subtitle{
     font-size: 8rem;
     word-break: break-all;
@@ -43,6 +45,6 @@ img{
     .subtitle{
         font-size: 3rem;
         text-transform: capitalize;
-        max-width: initial;
+        max-width: initial !important;
     }
 }
