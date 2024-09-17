@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.academic{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
