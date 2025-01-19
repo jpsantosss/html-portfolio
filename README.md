@@ -11,7 +11,7 @@ This portfolio includes sections for my professional experience, academic backgr
 
 I am available for new projects at the moment. Get in touch with me and we’ll set up a conversation.👋
 
-- Email: [jpedrosantos@gmail.com](mailto:jpedrosantosoliv@gmail.com)
+- Email: [jpedrosantosoliv@gmail.com](mailto:jpedrosantosoliv@gmail.com)
 - WhatsApp: [+55 21 976326120](https://api.whatsapp.com/send?phone=5521976326120)
 - GitHub: [github.com/jpsantosss](https://github.com/jpsantosss)
 - LinkedIn: [linkedin.com/in/jpedrosantosoliv](https://linkedin.com/in/jpedrosantosoliv)
