@@ -14,6 +14,7 @@ I am available for new projects at the moment. Get in touch with me and we’ll 
 - Email: [jpedrosantos@gmail.com](mailto:jpedrosantos@gmail.com)
 - WhatsApp: [+55 21 976326120](https://api.whatsapp.com/send?phone=5521976326120)
 - GitHub: [github.com/jpsantosss](https://github.com/jpsantosss)
+- LinkedIn: [likedin.com/in/jpedrosantosoliv](www.linkedin.com/in/jpedrosantosoliv)
 
 ## Usage 🖥️
 
