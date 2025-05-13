@@ -1,5 +1,6 @@
 @charset "UTF-8";
-.experience{
+
+.experience {
     max-width: 1200px;
     padding: 40px 20px;
     margin: 0 auto;
@@ -7,17 +8,20 @@
     grid-template-columns: 1fr 2fr;
     gap: 100px;
 }
-.experience .subtitle{
+
+.experience .subtitle {
     color: var(--c003);
 }
-.experience-text{
+
+.experience-text {
     max-width: 40ch;
     font-size: 1.5rem;
     line-height: 1.33;
     margin-bottom: 60px;
     color: var(--c010);
 }
-.experience-box{
+
+.experience-box {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +31,8 @@
     margin-bottom: 20px;
     border-radius: 4px;
 }
-.experience-box::before{
+
+.experience-box::before {
     position: absolute;
     content: '';
     display: block;
@@ -37,7 +42,8 @@
     left: -4px;
     top: 20px;
 }
-.experience-box-year{
+
+.experience-box-year {
     position: absolute;
     width: 80px;
     text-align: right;
@@ -46,50 +52,65 @@
     color: var(--c007);
     font-size: 0.875rem;
 }
-.experience-box-title{
+
+.experience-box-title {
     font-size: 1.125rem;
     line-height: 1.1;
     font-weight: bold;
 }
-.experience-box-text{
+
+.experience-box-text {
     font-size: 0.875rem;
     line-height: 1.4;
     color: var(--c010);
 }
-.experience-box-technologies{
+
+.experience-box-technologies {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     align-content: start;
     list-style: none;
 }
-.experience-box-technologies-item{
+
+.experience-box-technologies-item {
     font-size: 0.875rem;
     line-height: 1.4;
     border-radius: 4px;
     background-color: var(--c001);
     padding: 5px 10px;
+    cursor: default;
+    transition: .3s;
 }
-@media (max-width: 800px){
-    .experience{
+
+.experience-box-technologies-item:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .experience {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    .experience .subtitle{
+
+    .experience .subtitle {
         color: var(--c011);
     }
-    .experience-text{
+
+    .experience-text {
         font-size: 1.25rem;
     }
-    .experience-box-year{
+
+    .experience-box-year {
         position: initial;
         order: 1;
         width: initial;
         text-align: left;
     }
 }
-@media (max-width: 400px){
-    .experience-box{
+
+@media (max-width: 400px) {
+    .experience-box {
         grid-template-columns: 1fr;
     }
 }
